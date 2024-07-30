@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Noemy Hurtado Lucas">
+    <title>Formulario</title>
+    
+</head>
+<body>
+    
+    <form class="formulario" action="destino.php" method="POST" >
+        <img src="./imagen/evento.jpg" alt="imagen" width="100%">
+        <fieldset>
+            
+            <legend>Acceso al sistema</legend>
+
+            <label >Usuario (obligatorio)</label>
+            <input type="text" name="usuario" placeholder="Escribe tu usuario" autocomplete="off" required>
+            
+            <label >Password (obligatorio)</label>
+            <input type="password" name="clave" placeholder="Escribe tu clave" required><br>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Tus Datos Personales</legend>
+
+            <label >Nombre(s) y Apellidos (obligatorio)</label>
+            <input type="text" name="nombreapellido" placeholder="Escribe tu nombre completo" autocomplete="off" required><br>
+           
+            <label >Ciudad de nacimiento</label>
+            <select name="ciudad" >
+                <option value="CBBA">Cochabamba</option>
+                <option value="LPZ" selected>La Paz</option>
+                <option value="SCZ">Santa Cruz</option>
+                <option value="ORU">Oruro</option>
+                <option value="PD">Pando</option>
+                <option value="CHQ">Chuquisaca</option>
+                <option value="PSI">Potosi</option>
+                <option value="TJA">Tarija</option>
+                <option value="BNI">Beni</option>
+            </select><br>
+
+            <label >Fecha de Nacimiento</label>
+            <input type="date" name="nacimiento" value="2023-04-01"><br>               
+
+            <label>Email (obligatorio)</label>
+            <input type="email" name="correo" placeholder="Ingresa tu email" required><br>
+        
+        </fieldset>
+   
+        <fieldset>
+
+            <legend>Tus Conocimientos</legend>
+            <label >Selecciona tus conocimientos y grado de dominio</label><br>
+
+            <input type="checkbox" name="php"  selected value="PHP">PHP
+            <input type="range" name="saberphp" min="0" max="10" value="0" ><br>
+
+            <input type="checkbox" name="html5" value="HTML5">HTML5
+            <input type="range" name="saberhtml5" min="0" max="10" value="0" ><br>
+
+            <input type="checkbox" name="css" value="CSS" >CSS
+            <input type="range" name="sabercss" min="0" max="10" value="0" ><br>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Souvenirs</legend>
+
+            <label>Selecciona el color de tu camiseta</label>
+
+            <input type="color" name="color" value="red" >
+
+        </fieldset>
+
+        <button type="reset" enabled>BORRAR</button>
+        
+        <button type="submit" enabled>ENVIAR</button>
+    
+    </form>
+    
+
+    
+</body>
+</html>
